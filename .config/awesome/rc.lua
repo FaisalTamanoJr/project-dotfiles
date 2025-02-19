@@ -567,8 +567,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- Startup 
 awful.spawn.once("nm-applet")
 awful.spawn.once("cbatticon")
-awful.spawn.once("feh --bg-fill ~/Pictures/wallpaper.jpg &")
-awful.spawn.once("picom")
 awful.spawn.once("dunst")
 awful.spawn.once("volumeicon")
 awful.spawn.once("conky")
+awful.spawn.with_shell("feh --bg-fill ~/Pictures/wallpaper.jpg")
